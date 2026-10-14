@@ -1,0 +1,25 @@
+
+# Données locales
+data/
+
+# Identifiants et secrets Google Cloud
+credentials/
+*service-account*.json
+*credentials*.json
+.env
+.env.*
+
+# Environnement virtuel Python
+.venv/
+venv/
+
+# Fichiers temporaires Python
+__pycache__/
+*.pyc
+
+# Fichiers temporaires Jupyter
+.ipynb_checkpoints/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
