@@ -1,0 +1,22 @@
+[
+  {"name":"id","type":"STRING"},
+  {"name":"adresse","type":"STRING"},
+  {"name":"ville","type":"STRING"},
+  {"name":"cp","type":"STRING"},
+  {"name":"gazole_prix","type":"FLOAT"},
+  {"name":"gazole_maj","type":"TIMESTAMP"},
+  {"name":"code_departement","type":"STRING"},
+  {"name":"pop","type":"STRING"},
+  {"name":"prix_valide","type":"BOOLEAN"},
+  {"name":"latitude","type":"FLOAT"},
+  {"name":"longitude","type":"FLOAT"},
+  {"name":"code_insee_geo","type":"STRING"},
+  {"name":"commune_geo","type":"STRING"},
+  {"name":"horodatage_collecte","type":"TIMESTAMP"},
+  {"name":"carburant","type":"STRING"},
+  {"name":"age_prix_heures","type":"FLOAT"},
+  {"name":"prix_recent_48h","type":"BOOLEAN"},
+  {"name":"prix_atypique_iqr","type":"BOOLEAN"},
+  {"name":"cle_observation","type":"STRING"},
+  {"name":"date_collecte","type":"DATE"}
+]
