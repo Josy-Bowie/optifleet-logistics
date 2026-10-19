@@ -420,3 +420,31 @@ Pour l'endpoint `/records`, nous retenons
 la pagination avec `limit=100` et `offset`.
 
 Source : https://help.opendatasoft.com/apis/ods-explore-v2/explore_v2.1.html
+
+
+
+#### Différence entre actualisation et fraîcheur
+
+Deux horloges doivent être distinguées :
+
+- L'actualisation du portail : récupération programmée
+  des données toutes les 15 minutes.
+- `gazole_maj` : date et heure de la dernière mise
+  à jour déclarée du prix du Gazole.
+
+Un portail récemment actualisé peut donc contenir
+des prix dont la dernière déclaration est ancienne.
+
+Un prix ancien n'est pas nécessairement erroné :
+il peut être resté inchangé.
+
+Cependant, son ancienneté augmente l'incertitude
+sur son utilisation pour une décision immédiate.
+
+Pour OptiFleet Logistics, nous appliquerons
+une règle métier de fraîcheur de 48 heures
+pour le classement des stations recommandées.
+
+Les prix plus anciens pourront être conservés
+pour l'analyse, mais signalés ou exclus
+des recommandations opérationnelles.
